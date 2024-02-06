@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>penalty</title>
+<style>
+p[id=demo]
+{
+	background-color:yellow;
+	font-size:25px;
+	
+}
+p
+{
+	font-size:25px;
+
+}
+input
+{
+	width:13%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+	margin-left:60px;
+}
+label
+{
+	
+	font-size:19px;
+	color:white;
+}
+input:focus
+{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+}
+.button {
+  background-color: #6600ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body>
+<h1>Penalty</h1>
+<body background="rebg.jpg">
+<p id="demo">Note: Suppose passenger wants to add one more person or passenger travel without a ticket<br>We should pay penalty for both situation.</p>
+<p><b>Please fill out these required details</b></p>
+<form action="action.php"/>
+<label for ="pass">Passenger Name:</label>
+<input type="name" 	id="pass" placeholder="Ex:john">
+<label for ="city1">Origin:</label>
+<input type="name" 	id="city1" >
+<label for ="city2">Destination :</label>
+<input type="name" 	id="city2">
+<p>Add person details  who wants you to add in this list </p>
+<div class="input_fields_wrap">
+<label for ="pass2">Passenger Name:</label>
+<input type="name" id="pass2" placeholder="Ex:john">
+<label for ="age1">Age:</label>
+<input type="number" id="age1" placeholder="Ex:25"><br>
+<label for ="pass2">Passenger Name:</label>
+<input type="name" id="pass2" placeholder="Ex:john">
+<label for ="age1">Age:</label>
+<input type="number" id="age1" placeholder="Ex:25"><br>
+<label for ="pass2">Passenger Name:</label>
+<input type="name" id="pass2" placeholder="Ex:john">
+<label for ="age1">Age:</label>
+<input type="number" id="age1" placeholder="Ex:25"><br>
+<label for ="pass2">Passenger Name:</label>
+<input type="name" id="pass2" placeholder="Ex:john">
+<label for ="age1">Age:</label>
+<input type="number" id="age1" placeholder="Ex:25"><br><br>
+<label>Fair price :</label> 
+<input id="first">
+<label>Penalty price:</label>
+<input id="second" value="500">
+<input type="button" onclick="add()" value="add"><br><br>
+<label>Your total amount is:</label>
+<input id="answer"><br>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+</script>
+<input id="pay" type="radio" required>
+ <label><b>Pay Through Credit / Debit Cards</b></label>
+<center>
+<button class="button" formaction="response2.html">Submit</button>
+<center>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+h1
+{
+	margin-left:43%;
+	
+}
+input
+{
+	width:15%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+	margin-left:45%;
+	margin-top:3px;
+
+}
+input:focus
+{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+select
+{
+	width:15%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+	margin-left:45%;
+	
+}
+select:focus
+{
+	border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+.button {
+  background-color: #6600ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+   cursor: pointer;
+	box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}

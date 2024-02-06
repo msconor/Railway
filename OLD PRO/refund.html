@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>refund</title>
+<style>
+p[id=demo]
+{
+	background-color:yellow;
+	font-size:25px;
+	
+}
+p
+{
+	font-size:25px;
+
+}
+input
+{
+	width:15%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+	margin-left:60px;
+}
+label
+{
+	
+	font-size:19px;
+	color:white;
+}
+input:focus
+{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+}
+.button {
+  background-color: #6600ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body>
+<h1>Refund Amount</h1>
+<body background="rebg.jpg">
+<p id="demo">Note: Suppose customers wants to cancel their booking within one week.</br>50% amount will be refunded at a time.</p>
+<p><b>Please fill out these required details</b></p>
+<form action="action.php"/>
+<label for ="pass">Name:</label>
+<input type="name" 	id="pass" placeholder="Ex:john">
+<label for ="name">Phone number:</label>
+<input type="text" 	id="no"placeholder="Ex:986959XXXX">
+<label for ="gmail">Gmail:</label>
+<input type="text" 	id="gmail" placeholder="abc@gmail.ocm"><br><br>
+<h2>Bank Details</h2>
+<label for ="name">Bank Name:</label>
+<input type="name" 	id="no">
+<label for ="name">Account name:</label>
+<input type="name"  id="holder_name"placeholder="Ex:KUMAR"><br><br>
+<label for ="name">Account no:</label>
+<input type="number"id="acc_no"placeholder="904858XXXXXXX">
+<label for ="name">IFSC code:</label>
+<input type="text" 	id="text"placeholder="SB1N0xxxxx">
+<h2>Reason for Cancelling</h2>
+<label for ="name">Reason:</label>
+<input type="text" id="reason" placeholder="Reason"><br><br>
+<center>
+<button class="button" formaction="response1.html">Submit</button>
+<center>
+</form>
+</body>
+</html>

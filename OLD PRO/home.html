@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>mainpage</title>
+<link rel="stylesheet" href="login.css">
+<style>
+body
+{
+	background-image:url("111.jpg");
+	background-size: cover;
+	
+}
+.title {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.title li {
+	display: inline-block;
+}
+.title li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.title li a:hover {
+	background: #fff;
+	color: #333;
+}
+.front 
+{
+
+	color:white;
+	
+}
+</style>
+</head>
+<body>
+<div class="front"><h1>RAILWAY RESERVATION SYSTEM</h1>
+<ul class="title">
+<li><a href="refund.html">REFUND AMOUNT</a></li>
+<li><a href="penalty.html">PENALTY AMOUNT</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="about us.html">ABOUT US</a></li>
+</ul>
+<div class="container">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+	<h2>LOGIN</h2>
+	<form>
+			<input type="no" class="input-box" placeholder="Moblie no" required>
+			<input type="password" class="input-box" placeholder="Password" required>
+			<button type="submit" class="submit-btn" formaction="book.html">Submit</button>
+			<input type="checkbox"><span>Remember Me</span>
+	</form>
+	<button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+	<a href=" ">Forgot Password</a>
+</div>
+<div class="card-back">
+<h2>REGISTER</h2>
+	<form>
+			
+			<button type="submit" class="submit-btn" formaction="personal.html">New Register</button>
+	</form>
+	<button type="button" class="btn" onclick="openLogin()">I've an account</button>
+
+</div>
+</div>
+</div>			
+</div>
+<script>
+var card=document.getElementById("card");
+function openRegister()
+{
+	card.style.transform="rotateY(-180deg)";
+}
+function openLogin()
+{
+	card.style.transform="rotateY(0deg)";
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>

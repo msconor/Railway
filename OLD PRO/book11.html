@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>booking</title>
+<style>
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width:50%;
+}
+
+th, td {
+  padding: 15px;
+}
+div {
+	border: 1px solid black;
+  height: 700px;
+  width: 32%;
+  background-color: white;
+  padding-left: 10px;
+  margin-left: 80px;
+  padding: 10px; 
+  border-radius: 25px;
+}
+button{
+	 margin-left: 150px;
+	 background-color: #FF701F ;
+	 border: none;
+	 border-radius: 16px;
+	 padding: 10px 20px;
+}
+</style>
+</head>
+<body style="background-image:url('train-.jpg');"><br><br>
+	<div>
+	<form action="action.php">
+	<h1>Passenger Details</h1>
+	<h2>Family members</h2>
+	<input type="name" class="name" placeholder="Passenger Name" required>
+	<input type="number" class="no" placeholder="Age" required><br><br>
+	<input type="name" class="name" placeholder="Passenger Name">
+	<input type="number" class="no" placeholder="Age"><br><br>
+	<input type="name" class="name" placeholder="Passenger Name">
+	<input type="number" class="no" placeholder="Age" ><br><br>
+	<input type="name" class="name" placeholder="Passenger Name">
+	<input type="number" class="no" placeholder="Age" ><br><br>
+	<select required id="gen" name="gen" ><br><br><br>
+		<option value="">Gender</option>
+		<option value="Gender 1">Male</option>
+		<option value="Gender 2">Female</option>
+		<option value="Gender 3">Transgender</option>
+	</select>
+	<select required id="prefer" name="prefer" ><br><br><br>
+		<option value="">No Preference</option>
+		<option value="Prefer 1">Lower</option>
+		<option value="Prefer 2">Upper</option>
+		<option value="Prefer 3">Cabin </option>
+	</select>
+	<select id="country" name="country">
+	<option value="India">India</option>
+	<option value="Afganistan">Afghanistan</option>
+    <option value="Albania">Albania</option>
+	<option value="Australia">Australia</option>
+	<option value="Bangladesh">Bangladesh</option>
+	<option value="Brazil">Brazil</option>
+	<option value="Canada">Canada</option>
+	<option value="China">China</option>
+	<option value="Cuba">Cuba</option>
+	<option value="Dominican Republic">Dominican Republic</option>
+	<option value="France">France</option>
+	<option value="Germany">Germany</option>
+	<option value="Greenland">Greenland</option>
+	<option value="Hawaii">Hawaii</option>
+	<option value="Hong Kong">Hong Kong</option>
+	<option value="Italy">Italy</option>
+	<option value="Japan">Japan</option>
+	<option value="Korea North">Korea North</option>
+	<option value="Malaysia">Malaysia</option>
+	<option value="Mexico">Mexico</option>
+	<option value="Nepal">Nepal</option>   
+	<option value="New Zealand">New Zealand</option>
+	<option value="Phillipines">Philippines</option>
+	<option value="Russia">Russia</option>
+	<option value="Singapore">Singapore</option>
+	<option value="South Africa">South Africa</option>
+	<option value="Spain">Spain</option>
+	<option value="Sri Lanka">Sri Lanka</option>
+	<option value="Turkey">Turkey</option>
+  </select>
+ <h2>Contact Details</h2>
+ <p>(Ticket details will be available in phone number *******089)</p>
+ <input type="number" class="no" placeholder="Passenger mobile number" required>
+ <h2>Your Destination Address</h2>
+ <input type="number" class="no" placeholder="House No" required>
+<input type="text" class="name" placeholder=" Street Name" required>
+<script type="text/javascript">
+var citiesByState = {
+Tamilnadu: ["Chennai","Vellore","Coimbatore"],
+Maharashtra: ["Mumbai","Pune","Nagpur"],
+Puducherry:["puducherry","Yanam","Maha","Karaikal"],
+Karnataka:["Bangalore","Myosre","Mangalore"],
+Kerala: ["kochi","Kanpur"]
+}
+function makeSubmenu(value) {
+if(value.length==0) document.getElementById("citySelect").innerHTML = "<option></option>";
+else {
+var citiesOptions = "";
+for(cityId in citiesByState[value]) {
+citiesOptions+="<option>"+citiesByState[value][cityId]+"</option>";
+}
+document.getElementById("citySelect").innerHTML = citiesOptions;
+}
+}
+
+function resetSelection() {
+document.getElementById("countrySelect").selectedIndex = 0;
+document.getElementById("citySelect").selectedIndex = 0;
+}
+
+
+</script>
+<body onload="resetSelection()"><br><br>
+<select id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+<option value="" disabled selected>Choose State</option>
+<option>Tamilnadu</option>
+<option>Maharashtra</option>
+<option>Puducherry</option>
+<option>Karnataka</option>
+<option>Kerala</option>
+</select>
+<select id="citySelect" size="1" >
+<option value="" disabled selected>Choose City</option>
+<option></option>
+</select>
+
+ <input type="number" class="no" placeholder="PIN" required>
+ <h2>Payment Mode</h2>
+ <input type="radio" required>
+ <label><b>Pay Through Credit / Debit Cards</b></label><br><br>
+ <button class="button" formaction="sample.html">Continue</button></form>
+</div>
+</body>
+</html>
+  
